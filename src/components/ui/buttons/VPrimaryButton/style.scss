@@ -1,0 +1,23 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 36px;
+  padding: 0;
+
+  border: {
+    width: 1px;
+    style: solid;
+  }
+
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+
+  &:hover:not(:disabled) {
+    transition:
+      background-color 0.15s,
+      border-color 0.15s;
+  }
+}

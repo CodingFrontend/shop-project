@@ -1,0 +1,24 @@
+.cart-buy {
+  display: flex;
+  flex-direction: column;
+
+  padding: var(--b-padding);
+
+  border: 1px solid var(--c-border);
+}
+
+.cart-buy-info {
+  margin-block-end: var(--b-margin-m);
+}
+
+.cart-buy-info__item {
+  margin-block-end: var(--b-margin);
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.cart-buy-button {
+  width: 100%;
+}

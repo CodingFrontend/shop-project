@@ -1,0 +1,16 @@
+.cart-content {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.cart-content-inner {
+  display: flex;
+  align-items: flex-start;
+
+  gap: calc(var(--b-gap) * 2);
+}
+
+.cart-list-buy {
+  width: 350px;
+}

@@ -1,0 +1,76 @@
+.filter-item {
+  display: block;
+  position: relative;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-item--text {
+  margin-block-end: calc(var(--b-margin) / 2);
+}
+
+.filter-item--size,
+.filter-item--color {
+  display: inline-block;
+
+  margin-inline-end: calc(var(--b-margin) / 2);
+}
+
+.filter-item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.filter-item-checkmark {
+  display: inline-block;
+}
+
+.filter-item-checkmark--size,
+.filter-item-checkmark--color {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+}
+
+.filter-item-checkmark--size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+
+  border: 1.5px solid var(--c-border);
+}
+
+.filter-item-checkmark--disabled {
+  position: relative;
+  cursor: default;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: 8px;
+
+    width: 1px;
+    height: calc(100% + 7px);
+
+    z-index: 2;
+
+    background-color: var(--c-border);
+
+    transform: rotate(45deg);
+  }
+}
+
+.filter-item input:checked ~ .filter-item-checkmark:not(.filter-item-checkmark--disabled) {
+  border-color: var(--c-border-active);
+}
+
+.filter-item input:checked ~ .filter-item-checkmark--text {
+  font-weight: 600;
+}

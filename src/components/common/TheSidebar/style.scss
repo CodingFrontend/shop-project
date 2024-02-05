@@ -1,0 +1,17 @@
+.sidebar-filter {
+  position: fixed;
+  top: calc(var(--b-padding) + 150px);
+
+  width: 250px;
+  height: 100%;
+
+  border-right: 1px solid var(--c-border);
+
+  .filter {
+    margin-block-end: var(--b-margin-b);
+  }
+}
+
+.sidebar-filter-group__title {
+  margin-block-end: var(--b-margin);
+}

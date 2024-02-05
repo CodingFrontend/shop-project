@@ -1,0 +1,154 @@
+:root {
+  // Colors --------------------------------------------------------------------
+
+  // Base
+  --c-dark: #201a17;
+  --c-light: #ffffff;
+
+  // Semantic
+  --c-primary: #b28864;
+  --c-primary-rgb: 178, 136, 100;
+  --c-primary-light: #d39b73;
+
+  --c-secondary: #3a3330;
+  --c-secondary-light: #453d3a;
+
+  --c-danger: #ff897d;
+  --c-danger-rgb: 255, 137, 125;
+  --c-danger-dark: #690005;
+
+  --c-success: #ced173;
+  --c-success-rgb: 206, 209, 115;
+  --c-success-dark: #31330b;
+
+  --c-warning: #d89614;
+  --c-warning-rgb: 216, 150, 20;
+  --c-warning-dark: #4b3407;
+
+  --c-info: #84a6c5;
+  --c-info-rgb: 132, 166, 197;
+  --c-info-dark: #202e3d;
+
+  --c-neutral: #ada692;
+  --c-neutral-rgb: 173, 166, 146;
+
+  --c-disabled: #3d3d3d36;
+  --c-disabled-variant: #594941;
+
+  // Backgrounds
+  --c-background: var(--c-dark);
+  --c-surface: #b8b6b681;
+  --c-surface-rgb: 24, 18, 15;
+  --c-surface-variant: #352d27;
+  --c-surface-variant-rgb: 53, 45, 39;
+  --c-surface-variant2: #4a3a33;
+  --c-surface-inverse: var(--c-light);
+  --c-surface-additional: #655d58;
+
+  // Text
+  --c-text-title: var(--c-light);
+  --c-text-body: var(--c-light);
+  --c-text-label: #998f8a;
+  --c-text-additional: #655d58;
+  --c-text-disabled: var(--c-disabled);
+  --c-text-body-inverse: var(--c-dark);
+
+  // Other
+  --c-border: #18120f8a;
+  --c-border-hover: #866e64;
+  --c-border-active: #fffb00;
+
+  --c-accent: #e4bfa8;
+  --c-accent-variant: #422b1b;
+
+  --c-shadow: #141313b2;
+  --c-field-disabled: #362f2b;
+
+  // Buttons
+  --c-btn-primary: var(--c-primary);
+  --c-btn-primary-hover: var(--c-primary-light);
+  --c-btn-primary-text: var(--c-dark);
+
+  --c-btn-secondary: var(--c-secondary);
+  --c-btn-secondary-hover: var(--c-secondary-light);
+  --c-btn-secondary-text: var(--c-light);
+
+  --c-btn-danger: var(--c-danger);
+  --c-btn-danger-hover: #f27669;
+  --c-btn-danger-text: var(--c-danger-dark);
+
+  --c-btn-success: var(--c-success);
+  --c-btn-success-hover: color-mix(in srgb, var(--c-success) 80%, white);
+  --c-btn-success-text: var(--c-success-dark);
+
+  --c-btn-warning: var(--c-warning);
+  --c-btn-warning-hover: color-mix(in srgb, var(--c-warning) 80%, white);
+  --c-btn-warning-text: var(--c-warning-dark);
+
+  --c-btn-info: var(--c-info);
+  --c-btn-info-hover: color-mix(in srgb, var(--c-info) 80%, white);
+  --c-btn-info-text: var(--c-info-dark);
+
+  --c-btn-text: var(--c-primary);
+  --c-btn-text-hover: var(--c-primary-light);
+  --c-btn-text-disabled: var(--c-disabled);
+
+  --c-btn-disabled: var(--c-disabled);
+  --c-btn-disabled-text: var(--c-disabled-variant);
+
+  // Segmented buttons
+  --c-btn-segmented-off: var(--c-secondary);
+  --c-btn-segmented-off-border: var(--c-border);
+  --c-btn-segmented-off-hover: var(--c-secondary-light);
+  --c-btn-segmented-off-hover-border: var(--c-border-hover);
+
+  --c-btn-segmented-off-active: var(--c-secondary-light);
+  --c-btn-segmented-off-active-border: var(--c-border-active);
+
+  --c-btn-segmented-on-border: var(--c-border);
+  --c-btn-segmented-on-hover-border: var(--c-secondary-light);
+  --c-btn-segmented-on-active-border: var(--c-border-active);
+
+  --c-btn-segmented-disabled-border: var(--c-disabled);
+
+  // Controls
+  --c-control: var(--c-light);
+  --c-control-hover: #c7aa9e;
+  --c-control-active: var(--c-primary);
+  --c-control-disabled: var(--c-disabled);
+  --c-control-border-hover: var(--c-border-hover);
+
+  --c-switcher-off-border: var(--c-surface-additional);
+  --c-switcher-off-background: var(--c-secondary);
+  --c-switcher-off-toggler: var(--c-light);
+  --c-switcher-off-toggler-shadow: var(--c-light);
+  --c-switcher-off-icon: var(--c-secondary);
+
+  --c-switcher-on-border: var(--c-primary);
+  --c-switcher-on-background: var(--c-primary);
+  --c-switcher-on-toggler: var(--c-dark);
+  --c-switcher-on-toggler-shadow: var(--c-primary);
+  --c-switcher-on-icon: var(--c-primary);
+
+  --c-switcher-disabled-background: var(--c-disabled);
+  --c-switcher-disabled-border: var(--c-border);
+  --c-switcher-disabled-toggler: var(--c-disabled-variant);
+  --c-switcher-disabled-icon: var(--c-disabled);
+
+  // Block ---------------------------------------------------------------------
+
+  --b-gap: 36px;
+  --b-padding: 16px;
+  --b-padding-m: 24px;
+  --b-padding-b: 36px;
+  --b-margin: 16px;
+  --b-margin-m: 24px;
+  --b-margin-b: 36px;
+
+  // Layout --------------------------------------------------------------------
+
+  --l-container: 1275px; // Общая ширина контейнера
+  --l-wrapper: 1024px; // Ширина внутреннего контейнера
+  --l-content: 824px; // Ширина области контента
+  --l-container-block: 464px; // Ширина блока
+}

@@ -1,0 +1,17 @@
+.icon-button {
+  display: inline-flex;
+  padding: 0;
+  background: none;
+  border: none;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.icon-button .icon {
+  margin-bottom: 0;
+}
